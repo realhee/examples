@@ -1,5 +1,6 @@
 // day 1
 // 크레인 인형뽑기 게임
+
 function solution(board, moves) {
     let result = 0;
     let size = board.length;
