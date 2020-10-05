@@ -5,6 +5,7 @@ function solution(board, moves) {
     let size = board.length;
     let num = 0;
     let pocket = [];
+    
     moves.forEach(move=>{
         let cnt = 0;
         while(true){
