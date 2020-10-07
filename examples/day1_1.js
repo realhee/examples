@@ -1,10 +1,12 @@
-function solution(board, moves) {
+// day 1
+// 크레인 인형뽑기 게임
+// for문 형태
 
+function solution(board, moves) {
     var count =0;
     var stack = [];
-
     for(var i=0;i<moves.length;i++){
-        var now = moves[i]-1
+        var now = moves[i]-1;
         for(var j=0;j<board.length;j++){
             if(board[j][now]!=0){
                 if(stack[stack.length-1]===board[j][now]){
@@ -12,13 +14,13 @@ function solution(board, moves) {
                     count+=2;
                 }
                 else{
-                    stack.push(board[j][now])
+                    stack.push(board[j][now]);
                 }
                 board[j][now] = 0;
                 break;
             }
         }
     }
-    console.log(stack)
-    return count
+    console.log(stack);
+    return count;
 }
