@@ -1,7 +1,6 @@
 // day4_1
 // 문자열 내 p와 y의 개수 - toUpperCase, spilt
 
-
 function solution(s) {
     var upperCase = s.toUpperCase();
     
