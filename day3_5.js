@@ -1,7 +1,6 @@
 // day3_5
 // 문자열 내 마음대로 정렬하기 - localeCompare
 
-
 function solution(strings, n) {
     var answer = [];
     answer = strings.sort((a, b)=> {
