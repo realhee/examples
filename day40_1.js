@@ -1,6 +1,6 @@
 // day 40_1
 // 피보나치 수
-
+/*
 function solution(num){
     var answer = 0;
     var memo = [];
@@ -15,11 +15,11 @@ function solution(num){
     answer = memo[num];
     return answer;
   }
-
-  /*
+*/
+  
   // solution 2
     function fibonacci(num) {
     if(num < 2) return num;
     return fibonacci(num-1) + fibonacci(num-2);
   }
-  */
+  
