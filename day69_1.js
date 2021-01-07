@@ -9,7 +9,6 @@ function solution(n, k) {
     k--;
     while (answer.length !== n) {
       fac = fac / arr.length;
-      // console.log(fac);
       let temp = arr[Math.floor(k / fac)];
       answer.push(temp);
       k = k % fac;
