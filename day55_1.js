@@ -25,7 +25,6 @@ function bfs(search, target, words, count, result) {
       }
     }
   
-    //이후 아래로 내려감
     if (queue.length) {
       count++
       for (let i = 0; i < queue.length; i++) {
@@ -44,3 +43,6 @@ function bfs(search, target, words, count, result) {
     bfs(begin, target, words, 0, result)
     return Math.min.apply(null, result)
   }
+
+
+  
