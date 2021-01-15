@@ -27,7 +27,7 @@ function solution(dirs) {
             gps[0] -= 1;
             ret = true;
         }
-        //길은 양뱡향이 아닌 단방향으로 취급("L,R" => ret : 1)
+        //길은 양뱡향이 아닌 단방향 취급("L,R" => ret : 1)
         const filter = answer.filter(item => {
             return item[0] == pre_gps[0] && item[1] == pre_gps[1] && item[2] == gps[0] && item[3] == gps[1] || item[0] == gps[0] && item[1] == gps[1] && item[2] == pre_gps[0] && item[3] == pre_gps[1]
         })
