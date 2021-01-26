@@ -10,4 +10,4 @@ function solution(array) {
     } else {
       return (array[center - 1] + array[center]) / 2.0; // 짝수 개 요소는, 중간 두 수의 평균 반환
     }
-  }ssss
+  }
