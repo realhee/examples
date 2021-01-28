@@ -25,3 +25,27 @@ function solution(food_times, k) {
     
     return -1;
 }
+
+
+// 두 번째 풀이
+/*
+function solution(food_times, k) {
+    if(food_times.length > k) return k+1
+
+    const val = k / food_times.length,
+          rest = k % food_times.length,
+          timesSum = food_times.reduce((a, b) => a + b);
+    
+    if(timesSum <= k) return -1;
+    
+    let count = 0;
+    for(let i=0;timesSum>i;i++) {
+        const idx = i%food_times.length
+        if(food_times[idx] > 0) {
+            food_times[idx]--
+            count++;
+            if(count == k) return (food_times.length < idx+2 ? idx+2 - food_times.length : idx+2);
+        }
+    }
+}
+*/
