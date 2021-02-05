@@ -6,7 +6,7 @@ function solution(n, s) {
     if (n > s) {
       return [-1];
     }
-    // 반올림 루프
+    // 반올림
     for (let i = 0; i < n; i++) {
       const number = Math.round(s/(n-i));
       answer.push(number);
