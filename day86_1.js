@@ -2,7 +2,7 @@
 // 스티커 모으기(2)
 
 // TODO
-/*
+
 class Solution {
     public int solution(int sticker[]) {
         if (sticker.length <= 3) {
@@ -29,4 +29,3 @@ class Solution {
         return Math.max(dp1[i], dp2[i]);
     }
 }
-*/
